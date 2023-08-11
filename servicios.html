@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprenta Salomón</title>
+    <link rel="stylesheet" href="./css/servicios.css">
+    <link rel="icon" href="./img/icon.png" type="image/png">
+    
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <h2 class="logo__titulo"><a href="index.html">Imprenta <span>salomón</span></a> </h2>
+    </div>
+    <div class="ham__menu">
+      <button class="abrir-menu" id="abrir"><img src="./assets/menu.svg" alt=""></button>
+    
+    </div>
+ 
+      <header class="js" id="header">
+          
+         <button class="close-menu" id="cerrar"><img src="./assets/close.svg" alt=""></button>
+          <div class="nav">
+              <nav>
+                  <ul class="nav__list">
+                      <li class="nav__item"><a href="index.html">inicio</a></li>
+                      <li class="nav__item"><a href="servicios.html">Servicios</a></li>
+                      <li class="nav__item"><a href="index.html#ubicacion">Ubicación</a></li>
+                  </ul>
+              </nav>
+              <button class="nav__btn"><a href="contacto.html">Contacto</a></button>
+          </div>
+          <div class="redes">
+            <a target="_blank" class="insta_link" href="https://www.instagram.com/imprenta.salomon/?igshid=YmM0MjE2YWMzOA%3D%3D">
+              <img src="./assets/insta.svg" class="img__insta" alt="">
+            </a>
+            <a target="_blank" class="face_link" href="https://www.facebook.com/people/Imp-Salomon/pfbid0Z34oVBqeoge17cqUAbT1WuNXbGTjnNRbSsu6rqDLgW6xwJ87zgrpdmbUnW8FoJ7Tl/?mibextid=LQQJ4d">
+              <img src="./assets/facebook.svg" class="img__face" alt="">
+            </a>
+            <a target="_blank" class="wha_link" href="">
+            <img src="./assets/wha.svg" class="img__wha" alt="">
+            </a>
+          </div>
+      
+      </header>
+  </div>
+
+<!-- modal -->
+
+<div class="galeria" id="blur">
+  <div class="galeria_item">
+    <img src="./img/cajas.jpg" alt="">
+    <div class="galeria_desc">
+      <h4>Cajas</h4>
+      <button onclick="toggle()">Ver mas</button>
+    </div>
+  </div>
+  <div class="galeria_item">
+    <img src="./img/revistas.jpg" alt="">
+    <div class="galeria_desc">
+      <h4>revistas</h4>
+      <button onclick="toggle2()">Ver mas</button>
+    </div>
+  </div>
+  <div class="galeria_item">
+    <img src="./img/sello.jpg" alt="">
+    <div class="galeria_desc">
+      <h4>Sellos</h4>
+      <button onclick="toggle3()">Ver mas</button>
+    </div>
+  </div>
+  <div class="galeria_item">
+    <img src="./img/tarjetas.jgp.webp" alt="">
+    <div class="galeria_desc">
+      <h4>Tarjetas</h4>
+      <button onclick="toggle4()">Ver mas</button>
+    </div>
+  </div>
+  <div class="galeria_item">
+    <img src="./img/Talonario.jpg" alt="">
+    <div class="galeria_desc">
+      <h4>Facturación</h4>
+      <button onclick="toggle5()">Ver mas</button>
+    </div>
+  </div>
+  <div class="galeria_item">
+    <img src="./img/stickers.jpg" alt="">
+    <div class="galeria_desc">
+      <h4>Calcomanías</h4>
+      <button onclick="toggle6()">Ver mas</button>
+    </div>
+  </div>
+  
+</div>
+<div class="popup" id="popup">
+  <h3>CAJAS</h3>
+  <p>Ofrecemos una amplia variedad de cajas personalizadas 
+    diseñadas para satisfacer tus necesidades específicas.
+     Ya sea que necesites cajas para empaquetar productos, comida,
+     regalos o documentos importantes, nuestras opciones
+      de diseño 
+    y tamaño te permitirán crear una presentación perfecta.
+    </p>
+    <button onclick="toggle()">Close</button>
+</div>
+<div class="popup" id="popup2">
+  <h3>Revistas</h3>
+  <p>Captura la atención de tu audiencia con nuestras revistas
+     impresas de alta calidad. Desde revistas corporativas hasta
+      publicaciones promocionales y folletos, trabajamos contigo para
+     crear diseños 
+    atractivos y contenido envolvente que resalte tu mensaje.
+    </p>
+    <button onclick="toggle2()">Close</button>
+</div>
+<div class="popup" id="popup3">
+  <h3>Sellos</h3>
+  <p>Nuestros sellos personalizados son ideales para agregar 
+    un toque profesional y eficiente a tus documentos. 
+    Ya sea para uso en la oficina o para resaltar tu marca
+     en cada papel, 
+    nuestros sellos garantizan una impresión clara y duradera.
+    Tenemos disponibles sellos de bolsillo, automaticos, de madera y más!
+    </p>
+    <button onclick="toggle3()">Close</button>
+</div>
+  <div class="popup" id="popup4">
+  <h3>Tarjetas</h3>
+  <p>Deja una impresión duradera con nuestras tarjetas
+     de presentación profesionales. Nuestras opciones 
+     de diseño personalizado te permiten reflejar la
+    identidad de tu marca con elegancia y estilo, 
+    asegurando que 
+    hagas conexiones significativas en cada reunión.
+    Desde tarjetas de presentación personales hasta Vouchers y Gift Cards.
+    </p>
+    <button onclick="toggle4()">Close</button>
+</div>
+<div class="popup" id="popup5">
+  <h3>Facturacion</h3>
+  <p>Nuestras soluciones de facturación personalizadas
+     te ayudan a mantener el control de tus finanzas 
+     de manera organizada. Ya sea que necesites talonarios, facturas "A, B o C",
+     remitos, recibos, formularios continuos u otros documentos financieros, 
+     nuestras opciones de diseño
+     y formato se adaptarán a tus necesidades.
+    </p>
+    <button onclick="toggle5()">Close</button>
+</div>
+<div class="popup" id="popup6">
+  <h3>Calcomanias</h3>
+  <p>Las calcomanias personalizados son una
+    forma creativa de promocionar tu marca. Con una
+    variedad de tamaños y materiales disponibles,
+    nuestros stickers son ideales para etiquetar productos, 
+    regalos o para campañas promocionales llamativas.
+    Realizamos calcomanias para frutas, etiquetas de seguridad, stickers de vinilo y mucho más!
+    No dudes en consultarnos los materiales y tamaños que tenemos disponibles.
+    </p>
+    <button onclick="toggle6()">Close</button>
+</div>
+  
+  
+  
+
+   
+
+
+<!-- footer -->
+
+  <div class="footer">
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="rgb(70, 180, 223)" fill-opacity="1" d="M0,128L1440,256L1440,320L0,320Z"></path>
+    </svg>
+    <footer>
+      <div class="footer__1">
+        <div class="footer__1-desc">
+          <h4><a href="index.html">IMPRENTA <span>SALOMON</span></a> </h4>
+          <p> &#169; 2023 todos los derechos reservados</p>
+        </div>
+        <!--<img src="./img/datafiscal.jpg" alt="">-->
+      </div>
+      <div class="footer__2">
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="redes-footer">
+          <a target="_blank" href="https://www.instagram.com/imprenta.salomon/?igshid=YmM0MjE2YWMzOA%3D%3D">
+            <img src="./assets/insta.svg" class="img__insta" alt="">
+          </a>
+          <a target="_blank" href="https://www.facebook.com/people/Imp-Salomon/pfbid0Z34oVBqeoge17cqUAbT1WuNXbGTjnNRbSsu6rqDLgW6xwJ87zgrpdmbUnW8FoJ7Tl/?mibextid=LQQJ4d">
+            <img src="./assets/facebook.svg" class="img__face" alt="">
+          </a>
+          <a target="_blank" href="">
+            <img src="./assets/wha.svg" class="img__wha" alt="">
+          </a>
+        </div>
+      </div>
+
+    </footer>
+    <div class="designed">
+      <a href="https://www.companycopad.com/" target="_blank">designed by COPADco.</a>
+    </div>
+    
+  </div>
+
+    
+  <script src="./js/servicios.js"></script>
+    </body>
+    </html>
